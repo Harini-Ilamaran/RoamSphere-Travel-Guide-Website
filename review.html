@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./homepage.css" />
+    <link rel="icon" href="./images/RoamSphere.png" />
+    <title>Reviews - RoamSphere</title>
+    <style>
+      .reviews-page {
+        padding: 2rem;
+        padding-top: 85px;
+        max-width: 1200px;
+        margin: 0 auto;
+        min-height: 100vh;
+      }
+
+      .reviews-page h2 {
+        font-size: clamp(2.2rem, 3vw, 2.5rem);
+        margin: 2rem;
+        text-align: center;
+        color: rgb(1, 47, 107);
+      }
+
+      .reviews-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .review-card {
+        background-color: #e2f1fb;
+        border-radius: 10px;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .review-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        background-color: #e2f1fb;
+      }
+
+      .review-header {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+      }
+
+      .review-avatar {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+        flex-shrink: 0;
+      }
+
+      .review-avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .review-info h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .review-stars {
+        color: #ffd43b;
+        font-size: 1.2rem;
+      }
+
+      .review-content {
+        font-style: italic;
+        line-height: 1.7;
+      }
+
+      @media (max-width: 768px) {
+        .reviews-page {
+          padding: 1rem;
+          padding-top: 85px;
+        }
+
+        .review-header {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .review-card {
+          padding: 1.5rem;
+        }
+        .login {
+          padding: 0.7rem 1.5rem;
+          border-radius: 5px;
+          background-color: white;
+          color: black;
+          border: none;
+          cursor: pointer;
+          transition: background-color 0.3s;
+          font-size: 1rem; 
+          font-weight: 600; 
+          min-width: 100px; 
+        }
+
+        .login:hover {
+          background-color: skyblue;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="navigation">
+      <div class="logo-container">
+        <h1 class="RoamSphere"><i class="fa-solid fa-route"></i> RoamSphere</h1>
+      </div>
+      <div class="menu-container">
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="menu-overlay"></div>
+        <div class="sidebar">
+          <div class="sidebar-header">
+            <button class="close-btn" aria-label="Close menu">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <ul class="menu-items">
+            <li class="list"><a href="./homepage.html">Home</a></li>
+            <li class="list"><a href="./aboutus.html">About Us</a></li>
+            <li class="list"><a href="./packages.html">Packages</a></li>
+            <li class="list"><a href="./review.html">Reviews</a></li>
+            <li class="list"><a href="./needHelpPage.html">Need help?</a></li>
+            <li class="list login-item">
+              <button class="login">
+                <a href="./loginpage.html" style="color: black">Login</a>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="reviews-page">
+      <h2>Our Happy Customers</h2>
+      <div class="reviews-container">
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">
+              <img src="./images/user women.png" alt="Emily Carter" />
+            </div>
+            <div class="review-info">
+              <h3>Emily Carter</h3>
+              <div class="review-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="review-content">
+            <p>
+              "RoamSphere made our dream vacation come true! From the
+              personalized itinerary to the seamless bookings, everything was
+              perfect. Their recommendations for local dining and hidden gems
+              truly elevated our experience. I can't wait to plan my next trip
+              with them!"
+            </p>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">
+              <img src="./images/user man.jpg" alt="Rajesh Kumar" />
+            </div>
+            <div class="review-info">
+              <h3>Rajesh Kumar</h3>
+              <div class="review-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="review-content">
+            <p>
+              "RoamSphere is a game changer! Their attention to detail is
+              unmatched. I was impressed with how they tailored the trip to my
+              family's preferences. The guided tours and exclusive experiences
+              were incredible. Highly recommended!"
+            </p>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">
+              <img src="./images/user women.png" alt="Ananya Sharma" />
+            </div>
+            <div class="review-info">
+              <h3>Ananya Sharma</h3>
+              <div class="review-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="review-content">
+            <p>
+              "Planning my holidays through RoamSphere was the best decision
+              ever. The romantic getaways and luxury touches made it a
+              once-in-a-lifetime experience. Their customer service is friendly
+              and efficient. Thank you for the memories, RoamSphere!"
+            </p>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">
+              <img src="./images/user man.jpg" alt="Diego Rivera" />
+            </div>
+            <div class="review-info">
+              <h3>Diego Rivera</h3>
+              <div class="review-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="review-content">
+            <p>
+              "I've used RoamSphere twice now, and both trips were
+              extraordinary! They really understand what travelers need. The
+              accommodations were top-notch, and their support team was always
+              available. If you love hassle-free travel, this is the place!"
+            </p>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">
+              <img src="./images/user women.png" alt="Sarah Mitchell" />
+            </div>
+            <div class="review-info">
+              <h3>Sarah Mitchell</h3>
+              <div class="review-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="review-content">
+            <p>
+              "My adventure through RoamSphere was unforgettable! They offered
+              unique activities and ensured everything was stress-free. The only
+              reason I gave four stars is because one tour started slightly
+              late. Otherwise, excellent service!"
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

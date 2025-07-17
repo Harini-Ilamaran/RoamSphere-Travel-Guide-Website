@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./homepage.css" />
+    <link rel="icon" href="./images/RoamSphere.png" />
+    <title>Login</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-image: url(./images/login.jpg);
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 65px;
+      }
+
+      .login-container {
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 20px;
+        color: white;
+        padding: 2rem;
+        width: 90%;
+        max-width: 400px;
+        backdrop-filter: blur(5px);
+        margin: 2rem auto;
+      }
+
+      .login-container h3 {
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 1.8rem;
+      }
+
+      .login-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      .login-form input {
+        padding: 0.8rem;
+        border-radius: 5px;
+        border: none;
+        width: 100%;
+        font-size: 1rem;
+      }
+
+      .login-form button {
+        padding: 0.8rem;
+        border-radius: 5px;
+        border: none;
+        background-color: white;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .login-form button:hover {
+        background-color: rgb(0, 145, 255);
+        color: white;
+      }
+
+      .login-form p {
+        text-align: center;
+        margin-top: 1rem;
+      }
+
+      .login-form a {
+        color: skyblue;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="navigation">
+      <div class="logo-container">
+        <h1 class="RoamSphere"><i class="fa-solid fa-route"></i> RoamSphere</h1>
+      </div>
+      <div class="menu-container">
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="menu-overlay"></div>
+        <div class="sidebar">
+          <div class="sidebar-header">
+            <button class="close-btn" aria-label="Close menu">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <ul class="menu-items">
+            <li class="list"><a href="./homepage.html">Home</a></li>
+            <li class="list"><a href="./about.html">About Us</a></li>
+            <li class="list"><a href="./packages.html">Packages</a></li>
+            <li class="list"><a href="./review.html">Reviews</a></li>
+            <li class="list"><a href="./needHelpPage.html">Need help?</a></li>
+            <li class="list login-item">
+              <button class="login">
+                <a href="./loginpage.html" style="color: black">Login</a>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="login-container">
+      <h3>Login</h3>
+      <form class="login-form" action="./homepage.html">
+        <input placeholder="Username" type="text" required />
+        <input placeholder="Email" type="email" required />
+        <input placeholder="Password" type="password" required />
+        <button type="submit">Log in</button>
+        <p>New member? <a href="#">Sign up</a></p>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./homepage.css" />
+    <link rel="icon" href="./images/RoamSphere.png" />
+    <title>Help</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-image: url(./images/formpage.jpg);
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        padding-top: 65px;
+      }
+
+      .help-container {
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+      }
+
+      .help-form {
+        background-color: white;
+        border-radius: 10px;
+        padding: 2rem;
+        width: 100%;
+        max-width: 800px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .help-form fieldset {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 1.5rem;
+      }
+
+      .help-form legend {
+        padding: 0 1rem;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+
+      .form-group {
+        margin-bottom: 1.5rem;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+      }
+
+      .form-group input {
+        width: 100%;
+        padding: 0.8rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 0.8rem;
+        font-style: italic;
+      }
+
+      .form-group textarea {
+        width: 100%;
+        padding: 0.8rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        min-height: 150px;
+        font-size: 1rem;
+        font-family: inherit;
+      }
+
+      .form-actions {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+
+      .form-actions input[type="submit"],
+      .form-actions input[type="reset"] {
+        padding: 0.8rem 2rem;
+        border: none;
+        border-radius: 4px;
+        background-color: #00204a;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .form-actions input[type="submit"]:hover,
+      .form-actions input[type="reset"]:hover {
+        background-color: #004080;
+      }
+
+      @media (max-width: 768px) {
+        .help-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: calc(100vh - 65px);
+          padding: 1rem;
+        }
+
+        .help-form {
+          width: 100%;
+          max-width: 500px;
+          margin: 0 auto;
+          padding: 1.5rem;
+        }
+
+        .help-form fieldset {
+          padding: 1.2rem;
+        }
+
+        .form-group {
+          margin-bottom: 1.2rem;
+        }
+
+        .form-actions {
+          flex-direction: column;
+          gap: 0.8rem;
+        }
+
+        .form-actions input[type="submit"],
+        .form-actions input[type="reset"] {
+          width: 100%;
+        }
+
+        .login {
+          padding: 0.7rem 1.5rem;
+          border-radius: 5px;
+          background-color: white;
+          color: black;
+          border: none;
+          cursor: pointer;
+          transition: background-color 0.3s;
+          font-size: 1rem;
+          font-weight: 600;
+          min-width: 100px;
+        }
+
+        .login:hover {
+          background-color: skyblue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navigation">
+      <div class="logo-container">
+        <h1 class="RoamSphere"><i class="fa-solid fa-route"></i> RoamSphere</h1>
+      </div>
+      <div class="menu-container">
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="menu-overlay"></div>
+        <div class="sidebar">
+          <div class="sidebar-header">
+            <button class="close-btn" aria-label="Close menu">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <ul class="menu-items">
+            <li class="list"><a href="./homepage.html">Home</a></li>
+            <li class="list"><a href="./aboutus.html">About Us</a></li>
+            <li class="list"><a href="./packages.html">Packages</a></li>
+            <li class="list"><a href="./review.html">Reviews</a></li>
+            <li class="list"><a href="./needHelpPage.html">Need help?</a></li>
+            <li class="list login-item">
+              <button class="login">
+                <a href="./loginpage.html" style="color: black">Login</a>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="help-container">
+      <form class="help-form" action="./homepage.html">
+        <fieldset>
+          <legend>If you have any enquiries contact us:</legend>
+
+          <div class="form-group">
+            <label for="firstName">First Name:</label>
+            <input
+              type="text"
+              id="firstName"
+              placeholder="Enter your First Name"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input
+              type="text"
+              id="lastName"
+              placeholder="Enter your Last Name"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your Email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input
+              type="tel"
+              id="phone"
+              placeholder="Enter your Phone Number"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="enquiry">Enter your enquiries:</label>
+            <textarea id="enquiry" placeholder="Type Here..."></textarea>
+          </div>
+
+          <div class="form-actions">
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset" />
+          </div>
+        </fieldset>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
