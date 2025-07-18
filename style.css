@@ -68,7 +68,7 @@ img {
 
 .menu-items {
   display: flex;
-  gap: 2rem;
+  gap: 0.8rem;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -110,7 +110,10 @@ img {
 }
 
 .hero-content p {
-  font-size: clamp(1rem, 4vw, 1.5rem); 
+  font-size: clamp(0.8rem, 4vw, 1.3rem); 
+  text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .hero {
@@ -135,9 +138,10 @@ img {
 }
 
 .hero-content h1 {
-  font-size: clamp(5rem, 5vw, 5rem);
+  font-size: clamp(2rem, 8vw, 5rem);
   margin-bottom: 1rem;
   line-height: 1.1;
+  text-align: center;
 }
 
 /* About Section */
@@ -436,12 +440,6 @@ img {
     padding-top: 5rem;
   }
 
-  .sidebar-header {
-    display: flex;
-    justify-content: flex-end;
-    padding: 1rem;
-  }
-
   .sidebar.active {
     right: 0; 
   }
@@ -483,16 +481,8 @@ img {
     margin-top: 0;
   }
 
-  .sidebar .menu-items .list a,
-  .navigation .list a {
-    font-size: 1.4rem; 
-    font-weight: 500;
-    letter-spacing: 0.7px;
-    color: white;
-  }
-
   .navigation {
-    padding: 1rem 2rem;
+    padding: 0.8rem 1rem;
   }
 
   .navigation .list {
@@ -536,9 +526,15 @@ img {
   .hero-content p,
   .features-content p,
   .review-content p {
-    font-size: 1.4rem; 
-    line-height: 1.9;
+    font-size: 0.8rem; 
+    line-height: 1.5;
     text-align: justify;
+  }
+
+  .hero-content p{
+    font-size: 0.8rem; 
+    line-height: 1.5;
+    text-align: center;
   }
 
   .about-section {
@@ -559,11 +555,11 @@ img {
   }
 
   .about-content h2 {
-    font-size: 2.3rem; 
+    font-size: 1.3rem; 
   }
 
   .about-content p {
-    font-size: 1.4rem; 
+    font-size: 0.8rem; 
     line-height: 1.7;
     text-align: justify;
   }
@@ -578,16 +574,17 @@ img {
   }
 
   .features-content {
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
   }
 
   .features-content h2 {
-    font-size: 2.3rem;
+    font-size: 1.3rem;
   }
 
   .benefits-list li {
     justify-content: center;
+    font-size: 0.8rem;
   }
 
   .features-image {
@@ -601,3 +598,63 @@ img {
     min-height: 300px;
   }
 }
+
+/* In style.css */
+@media (max-width: 768px) {
+  .navigation {
+    padding: 0.8rem 1rem;
+  }
+  
+  .logo-container .RoamSphere {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+    gap: 0.3rem;
+  }
+  
+  .menu-toggle {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+  }
+}
+
+/* Better mobile defaults */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  section {
+    padding: 1.5rem 1rem;
+  }
+  
+  .about-content, .features-content {
+    padding: 1.5rem;
+  }
+  
+  /* Prevent horizontal scrolling */
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Make sidebar items smaller */
+.sidebar .menu-items .list a {
+  font-size: 0.8rem;  /* Smaller text */
+  margin-bottom: 0.2rem;
+}
+
+/* Reduce sidebar width on mobile */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 60%;  /* Takes less screen space */
+    max-width: 200px; /* Slimmer sidebar */
+  }
+}
+
