@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
@@ -47,18 +50,20 @@
 
       .help-form legend {
         padding: 0 1rem;
-        font-weight: bold;
+        font-weight: 500;
         font-size: 1.2rem;
+        font-style: italic;
       }
 
       .form-group {
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
       }
 
       .form-group label {
         display: block;
         margin-bottom: 0.5rem;
         font-weight: 500;
+        font-size: 1rem;
       }
 
       .form-group input {
@@ -76,7 +81,7 @@
         border: 1px solid #ddd;
         border-radius: 4px;
         min-height: 150px;
-        font-size: 1rem;
+        font-size: 0.8rem;
         font-family: inherit;
       }
 
@@ -107,15 +112,16 @@
         .help-container {
           display: flex;
           justify-content: center;
-          align-items: center;
+          align-items: flex-start;
           min-height: calc(100vh - 65px);
           padding: 1rem;
+          overflow-y: auto;
         }
 
         .help-form {
           width: 100%;
           max-width: 500px;
-          margin: 0 auto;
+          margin: 1rem auto;
           padding: 1.5rem;
         }
 
@@ -123,8 +129,16 @@
           padding: 1.2rem;
         }
 
+        .help-form legend {
+          font-size: 1rem;
+        }
+
         .form-group {
           margin-bottom: 1.2rem;
+        }
+
+        .form-group label {
+          font-size: 0.8rem;
         }
 
         .form-actions {
