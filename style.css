@@ -550,7 +550,7 @@ img {
   }
 
   .about-content {
-    margin: 1rem;
+    margin: 1rem 0.5rem;
     padding: 2rem;
   }
 
@@ -559,9 +559,10 @@ img {
   }
 
   .about-content p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     line-height: 1.5;
     text-align: justify;
+    
   }
 
   .features-wrapper {
