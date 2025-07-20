@@ -35,6 +35,11 @@ img {
   transition: font-size 0.3s ease;
 }
 
+.RoamSphere a{
+  color: skyblue;
+  text-decoration: none;
+}
+
 @media (min-width: 769px) {
   .RoamSphere {
     font-size: 1.5rem;
